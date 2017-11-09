@@ -1,8 +1,7 @@
 
 package com.bootcamp.service.crud;
 
-import static com.bootcamp.AppConstants.PERSISTENCE_UNIT;
-import com.bootcamp.constants.AppConstants;
+import static com.bootcamp.constants.AppConstants.PERSISTENCE_UNIT;
 import com.bootcamp.entities.Projet;
 import com.bootcamp.jpa.ProjetRepository;
 import java.sql.SQLException;
@@ -12,7 +11,7 @@ import java.util.List;
  *
  * @author edwigegédéon
  */
-public class ProjetCRUD implements AppConstants
+public class ProjetCRUD
 {
     public static void create(Projet projet) throws SQLException{
         ProjetRepository pr = new ProjetRepository(PERSISTENCE_UNIT);

@@ -21,7 +21,7 @@ public class PhaseProgrammeCRUD implements AppConstants{
     public static boolean create(PhaseProgramme phase){
 
         try {
-            PhaseProgrammeRepository phaseRepo=new PhaseProgrammeRepository(PERISTENCE_UNIT);
+            PhaseProgrammeRepository phaseRepo=new PhaseProgrammeRepository(PERSISTENCE_UNIT);
             phaseRepo.create(phase);
             return true;
         } catch (SQLException ex) {
@@ -33,7 +33,7 @@ public class PhaseProgrammeCRUD implements AppConstants{
       public static void read(){
 
         try {
-            PhaseProgrammeRepository phaseRepo=new PhaseProgrammeRepository(PERISTENCE_UNIT);
+            PhaseProgrammeRepository phaseRepo=new PhaseProgrammeRepository(PERSISTENCE_UNIT);
             phaseRepo.findAll();
 
         } catch (SQLException ex) {
@@ -43,7 +43,7 @@ public class PhaseProgrammeCRUD implements AppConstants{
     }
 
     public static void read(PhaseProgramme phase){
-        PhaseProgrammeRepository phaseRepo=new PhaseProgrammeRepository(PERISTENCE_UNIT);
+        PhaseProgrammeRepository phaseRepo=new PhaseProgrammeRepository(PERSISTENCE_UNIT);
 
         try {
             phaseRepo.update(phase);
@@ -53,7 +53,7 @@ public class PhaseProgrammeCRUD implements AppConstants{
     }
 
     public static void delete(PhaseProgramme phase){
-        PhaseProgrammeRepository phaseRepo=new PhaseProgrammeRepository(PERISTENCE_UNIT);
+        PhaseProgrammeRepository phaseRepo=new PhaseProgrammeRepository(PERSISTENCE_UNIT);
         try {
             phaseRepo.delete(phase);
         } catch (SQLException ex) {

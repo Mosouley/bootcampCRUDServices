@@ -19,7 +19,7 @@ public class ProgrammeCRUD implements AppConstants{
     public static boolean create(Programme programme){
 
         try {
-            ProgrammeRepository progRepo=new ProgrammeRepository(PERISTENCE_UNIT);
+            ProgrammeRepository progRepo=new ProgrammeRepository(PERSISTENCE_UNIT);
             progRepo.create(programme);
             return true;
         } catch (SQLException ex) {
@@ -31,7 +31,7 @@ public class ProgrammeCRUD implements AppConstants{
       public static void read(){
 
         try {
-            ProgrammeRepository progRepo=new ProgrammeRepository(PERISTENCE_UNIT);
+            ProgrammeRepository progRepo=new ProgrammeRepository(PERSISTENCE_UNIT);
             progRepo.findAll();
 
         } catch (SQLException ex) {
@@ -41,7 +41,7 @@ public class ProgrammeCRUD implements AppConstants{
     }
 
     public static void read(Programme programme){
-        ProgrammeRepository progRepo=new ProgrammeRepository(PERISTENCE_UNIT);
+        ProgrammeRepository progRepo=new ProgrammeRepository(PERSISTENCE_UNIT);
 
         try {
             progRepo.update(programme);
@@ -51,7 +51,7 @@ public class ProgrammeCRUD implements AppConstants{
     }
 
     public static void delete(Programme programme){
-        ProgrammeRepository progRepo=new ProgrammeRepository(PERISTENCE_UNIT);
+        ProgrammeRepository progRepo=new ProgrammeRepository(PERSISTENCE_UNIT);
         try {
             progRepo.delete(programme);
         } catch (SQLException ex) {

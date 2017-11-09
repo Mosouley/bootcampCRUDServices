@@ -11,5 +11,5 @@ package com.bootcamp.constants;
  */
 public interface AppConstants {
 
-    public static String PERISTENCE_UNIT="databasePU";
+    public static String PERSISTENCE_UNIT="databasePU";
 }
