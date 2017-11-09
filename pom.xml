@@ -28,7 +28,12 @@
       <version>1.0.0</version>
       <type>jar</type>
     </dependency>
-  
+        <dependency>
+            <groupId>com.bootcamp</groupId>
+            <artifactId>database</artifactId>
+            <version>1.0.0</version>
+            <type>jar</type>
+        </dependency>
     </dependencies>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
