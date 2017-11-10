@@ -17,7 +17,7 @@ public class BailleurCRUD implements AppConstants {
 
 		} catch (SQLException ex) {
 			// TODO Auto-generated catch block
-			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, ex);
+			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, e);
 
 		}
 		return false;
@@ -29,7 +29,7 @@ public class BailleurCRUD implements AppConstants {
 			return bailleurRepository.update(bailleur);
 		} catch (SQLException ex) {
 			// TODO Auto-generated catch block
-			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, ex);
+			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, e);
 
 		}
 		return false;
@@ -43,7 +43,7 @@ public class BailleurCRUD implements AppConstants {
 			return true;
 		} catch (SQLException ex) {
 			// TODO Auto-generated catch block
-			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, ex);
+			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, e);
 
 
 		}
@@ -55,8 +55,13 @@ public class BailleurCRUD implements AppConstants {
 		try {
 			return bailleurRepository.findById(id);
 
+<<<<<<< HEAD
 		} catch (SQLException ex) {
 			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, ex);
+=======
+		} catch (SQLException e) {
+			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, e);
+>>>>>>> bfe3eb84fef38bacd36eb94d85398c8ac0362efc
 
 		}
 		return null;
@@ -66,8 +71,13 @@ public class BailleurCRUD implements AppConstants {
 		BailleurRepository bailleurRepository = new BailleurRepository(AppConstants.PERSISTENCE_UNIT);
 		try {
 			return bailleurRepository.findAll();
+<<<<<<< HEAD
 		} catch (SQLException ex) {
 			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, ex);
+=======
+		} catch (SQLException e) {
+			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, e);
+>>>>>>> bfe3eb84fef38bacd36eb94d85398c8ac0362efc
 
 		}
 		return null;

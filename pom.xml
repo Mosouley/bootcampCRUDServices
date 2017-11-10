@@ -8,14 +8,9 @@
     <name>serviceCRUD</name>
     <url>http://maven.apache.org</url>
 
-    <repositories>
-        <repository>
-            <id>unknown-jars-temp-repo</id>
-            <name>A temporary repository created by NetBeans for libraries and jars it could not identify. Please replace the dependencies in this repository with correct ones and delete this repository.</name>
-            <url>file:${project.basedir}/lib</url>
-        </repository>
-    </repositories>
+
     <dependencies>
+<<<<<<< HEAD
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -28,6 +23,20 @@
             <version>1.0.0</version>
             <type>jar</type>
         </dependency>
+=======
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>6.11</version>
+      <scope>test</scope>
+    </dependency>
+      <dependency>
+      <groupId>com.bootcamp</groupId>
+      <artifactId>database</artifactId>
+      <version>1.2-SNAPSHOT</version>
+      <type>jar</type>
+    </dependency>
+>>>>>>> bfe3eb84fef38bacd36eb94d85398c8ac0362efc
     </dependencies>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -49,6 +58,7 @@
                 </configuration>
             </plugin>
 
+<<<<<<< HEAD
             <!-- Set a compiler level -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -59,6 +69,18 @@
                     <target>${jdk.version}</target>
                 </configuration>
             </plugin>
+=======
+			<!-- Set a compiler level -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+>>>>>>> bfe3eb84fef38bacd36eb94d85398c8ac0362efc
 
             <!-- Maven Assembly Plugin -->
             <plugin>
