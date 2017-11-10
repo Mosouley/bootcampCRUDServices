@@ -8,13 +8,7 @@
   <name>serviceCRUD</name>
   <url>http://maven.apache.org</url>
 
-    <repositories>
-        <repository>
-            <id>unknown-jars-temp-repo</id>
-            <name>A temporary repository created by NetBeans for libraries and jars it could not identify. Please replace the dependencies in this repository with correct ones and delete this repository.</name>
-            <url>file:${project.basedir}/lib</url>
-        </repository>
-    </repositories>
+
     <dependencies>
     <dependency>
       <groupId>org.testng</groupId>
@@ -22,18 +16,12 @@
       <version>6.11</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
+      <dependency>
       <groupId>com.bootcamp</groupId>
-      <artifactId>boot-DataBase</artifactId>
-      <version>1.0.0</version>
+      <artifactId>database</artifactId>
+      <version>1.2-SNAPSHOT</version>
       <type>jar</type>
     </dependency>
-        <dependency>
-            <groupId>com.bootcamp</groupId>
-            <artifactId>database</artifactId>
-            <version>1.0.0</version>
-            <type>jar</type>
-        </dependency>
     </dependencies>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -61,8 +49,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.3.2</version>
 				<configuration>
-					<source>${jdk.version}</source>
-					<target>${jdk.version}</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 

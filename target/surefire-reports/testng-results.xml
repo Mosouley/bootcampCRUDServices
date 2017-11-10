@@ -2,34 +2,34 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="12895" started-at="2017-11-09T15:36:01Z" finished-at="2017-11-09T15:36:14Z">
+  <suite name="Command line suite" duration-ms="7052" started-at="2017-11-10T17:43:59Z" finished-at="2017-11-10T17:44:06Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="12895" started-at="2017-11-09T15:36:01Z" finished-at="2017-11-09T15:36:14Z">
+    <test name="Command line test" duration-ms="7052" started-at="2017-11-10T17:43:59Z" finished-at="2017-11-10T17:44:06Z">
       <class name="com.bootcamp.tests.ProjetCRUDTest">
-        <test-method status="PASS" signature="create()[pri:0, instance:com.bootcamp.tests.ProjetCRUDTest@56cbfb61]" name="create" duration-ms="100" started-at="2017-11-09T16:36:14Z" finished-at="2017-11-09T16:36:14Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.bootcamp.tests.ProjetCRUDTest@cbfb61]" name="create" duration-ms="55" started-at="2017-11-10T18:44:06Z" finished-at="2017-11-10T18:44:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="findall()[pri:0, instance:com.bootcamp.tests.ProjetCRUDTest@56cbfb61]" name="findall" duration-ms="60" started-at="2017-11-09T16:36:14Z" finished-at="2017-11-09T16:36:14Z">
+        <test-method status="PASS" signature="findall()[pri:0, instance:com.bootcamp.tests.ProjetCRUDTest@cbfb61]" name="findall" duration-ms="21" started-at="2017-11-10T18:44:06Z" finished-at="2017-11-10T18:44:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findall -->
-        <test-method status="PASS" signature="update()[pri:0, instance:com.bootcamp.tests.ProjetCRUDTest@56cbfb61]" name="update" duration-ms="184" started-at="2017-11-09T16:36:14Z" finished-at="2017-11-09T16:36:14Z">
+        <test-method status="PASS" signature="update()[pri:0, instance:com.bootcamp.tests.ProjetCRUDTest@cbfb61]" name="update" duration-ms="68" started-at="2017-11-10T18:44:06Z" finished-at="2017-11-10T18:44:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- update -->
       </class> <!-- com.bootcamp.tests.ProjetCRUDTest -->
       <class name="com.bootcamp.tests.GenerateTableTest">
-        <test-method status="PASS" signature="createPhases()[pri:0, instance:com.bootcamp.tests.GenerateTableTest@2c8d66b2]" name="createPhases" duration-ms="11084" started-at="2017-11-09T16:36:01Z" finished-at="2017-11-09T16:36:12Z">
+        <test-method status="PASS" signature="createPhases()[pri:0, instance:com.bootcamp.tests.GenerateTableTest@8d66b2]" name="createPhases" duration-ms="6086" started-at="2017-11-10T18:43:59Z" finished-at="2017-11-10T18:44:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPhases -->
-        <test-method status="PASS" signature="createProgrammes()[pri:0, instance:com.bootcamp.tests.GenerateTableTest@2c8d66b2]" name="createProgrammes" duration-ms="171" started-at="2017-11-09T16:36:12Z" finished-at="2017-11-09T16:36:12Z">
+        <test-method status="PASS" signature="createProgrammes()[pri:0, instance:com.bootcamp.tests.GenerateTableTest@8d66b2]" name="createProgrammes" duration-ms="79" started-at="2017-11-10T18:44:05Z" finished-at="2017-11-10T18:44:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createProgrammes -->
-        <test-method status="PASS" signature="useProgrammeCRUD()[pri:0, instance:com.bootcamp.tests.GenerateTableTest@2c8d66b2]" name="useProgrammeCRUD" duration-ms="1073" started-at="2017-11-09T16:36:12Z" finished-at="2017-11-09T16:36:14Z">
+        <test-method status="PASS" signature="useProgrammeCRUD()[pri:0, instance:com.bootcamp.tests.GenerateTableTest@8d66b2]" name="useProgrammeCRUD" duration-ms="671" started-at="2017-11-10T18:44:05Z" finished-at="2017-11-10T18:44:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- useProgrammeCRUD -->

@@ -9,11 +9,10 @@ package com.bootcamp.tests;
 import com.bootcamp.entities.Indicateur;
 import com.bootcamp.enums.TypeIndicateur;
 import com.bootcamp.service.crud.IndicateurCRUD;
-import java.sql.SQLException;
+
 import java.util.Properties;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.persistence.Persistence;
+
 import org.testng.annotations.Test;
 
 /**
