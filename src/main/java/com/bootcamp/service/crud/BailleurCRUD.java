@@ -2,10 +2,12 @@ package com.bootcamp.service.crud;
 
 import com.bootcamp.constants.AppConstants;
 import com.bootcamp.entities.Bailleur;
-import com.bootcamp.repository.BailleurRepository;
+import com.bootcamp.jpa.BailleurRepository;
 
 import java.sql.SQLException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class BailleurCRUD implements AppConstants {
 	public static boolean create(Bailleur bailleur) {
@@ -13,7 +15,7 @@ public class BailleurCRUD implements AppConstants {
 		try {
 		return 	bailleurRepository.create(bailleur);
 
-		} catch (SQLException e) {
+		} catch (SQLException ex) {
 			// TODO Auto-generated catch block
 			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, ex);
 
@@ -25,7 +27,7 @@ public class BailleurCRUD implements AppConstants {
 		BailleurRepository bailleurRepository = new BailleurRepository(AppConstants.PERSISTENCE_UNIT);
 		try {
 			return bailleurRepository.update(bailleur);
-		} catch (SQLException e) {
+		} catch (SQLException ex) {
 			// TODO Auto-generated catch block
 			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, ex);
 
@@ -39,7 +41,7 @@ public class BailleurCRUD implements AppConstants {
 		try {
 			bailleurRepository.delete(bailleur);
 			return true;
-		} catch (SQLException e) {
+		} catch (SQLException ex) {
 			// TODO Auto-generated catch block
 			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, ex);
 
@@ -53,7 +55,7 @@ public class BailleurCRUD implements AppConstants {
 		try {
 			return bailleurRepository.findById(id);
 
-		} catch (SQLException e) {
+		} catch (SQLException ex) {
 			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, ex);
 
 		}
@@ -64,7 +66,7 @@ public class BailleurCRUD implements AppConstants {
 		BailleurRepository bailleurRepository = new BailleurRepository(AppConstants.PERSISTENCE_UNIT);
 		try {
 			return bailleurRepository.findAll();
-		} catch (SQLException e) {
+		} catch (SQLException ex) {
 			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, ex);
 
 		}

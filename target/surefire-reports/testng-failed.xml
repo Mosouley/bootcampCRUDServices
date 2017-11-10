@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Command line suite]">
+<suite verbose="0" name="Failed suite [com.bootcamp.tests.DepartementCrudTest]">
   <test name="Command line test(failed)">
     <classes>
-      <class name="com.bootcamp.tests.ProjetCRUDTest">
+      <class name="com.bootcamp.tests.DepartementCrudTest">
         <methods>
-          <include name="delete"/>
+          <include name="getCommunes"/>
         </methods>
-      </class> <!-- com.bootcamp.tests.ProjetCRUDTest -->
+      </class> <!-- com.bootcamp.tests.DepartementCrudTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
-</suite> <!-- Failed suite [Command line suite] -->
+</suite> <!-- Failed suite [com.bootcamp.tests.DepartementCrudTest] -->
