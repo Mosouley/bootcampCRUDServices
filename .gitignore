@@ -12,3 +12,5 @@ target/classes/com/bootcamp/service/crud/BailleurCRUD.class
 target/generated-sources/
 target/projetCRUD-jar-with-dependencies.jar
 target/projetCRUD.jar
+target/generated-test-sources/
+target
