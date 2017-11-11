@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="4086" started-at="2017-11-11T10:14:24Z" finished-at="2017-11-11T10:14:28Z">
+  <suite name="Command line suite" duration-ms="2129" started-at="2017-11-11T10:24:27Z" finished-at="2017-11-11T10:24:29Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="4086" started-at="2017-11-11T10:14:24Z" finished-at="2017-11-11T10:14:28Z">
+    <test name="Command line test" duration-ms="2129" started-at="2017-11-11T10:24:27Z" finished-at="2017-11-11T10:24:29Z">
       <class name="com.bootcamp.tests.ProjetCRUDTest">
-        <test-method status="PASS" signature="create()[pri:0, instance:com.bootcamp.tests.ProjetCRUDTest@d7b1517]" name="create" duration-ms="69" started-at="2017-11-11T11:14:28Z" finished-at="2017-11-11T11:14:28Z">
+        <test-method status="PASS" signature="create()[pri:0, instance:com.bootcamp.tests.ProjetCRUDTest@d7b1517]" name="create" duration-ms="41" started-at="2017-11-11T11:24:29Z" finished-at="2017-11-11T11:24:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method status="PASS" signature="findall()[pri:0, instance:com.bootcamp.tests.ProjetCRUDTest@d7b1517]" name="findall" duration-ms="9" started-at="2017-11-11T11:14:28Z" finished-at="2017-11-11T11:14:28Z">
+        <test-method status="PASS" signature="findall()[pri:0, instance:com.bootcamp.tests.ProjetCRUDTest@d7b1517]" name="findall" duration-ms="11" started-at="2017-11-11T11:24:29Z" finished-at="2017-11-11T11:24:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findall -->
-        <test-method status="PASS" signature="update()[pri:0, instance:com.bootcamp.tests.ProjetCRUDTest@d7b1517]" name="update" duration-ms="24" started-at="2017-11-11T11:14:28Z" finished-at="2017-11-11T11:14:28Z">
+        <test-method status="PASS" signature="update()[pri:0, instance:com.bootcamp.tests.ProjetCRUDTest@d7b1517]" name="update" duration-ms="25" started-at="2017-11-11T11:24:29Z" finished-at="2017-11-11T11:24:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- update -->
       </class> <!-- com.bootcamp.tests.ProjetCRUDTest -->
       <class name="com.bootcamp.tests.GenerateTableTest">
-        <test-method status="PASS" signature="createPhases()[pri:0, instance:com.bootcamp.tests.GenerateTableTest@2a18f23c]" name="createPhases" duration-ms="27" started-at="2017-11-11T11:14:28Z" finished-at="2017-11-11T11:14:28Z">
+        <test-method status="PASS" signature="createPhases()[pri:0, instance:com.bootcamp.tests.GenerateTableTest@2a18f23c]" name="createPhases" duration-ms="34" started-at="2017-11-11T11:24:29Z" finished-at="2017-11-11T11:24:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPhases -->
-        <test-method status="PASS" signature="createProgrammes()[pri:0, instance:com.bootcamp.tests.GenerateTableTest@2a18f23c]" name="createProgrammes" duration-ms="86" started-at="2017-11-11T11:14:28Z" finished-at="2017-11-11T11:14:28Z">
+        <test-method status="PASS" signature="createProgrammes()[pri:0, instance:com.bootcamp.tests.GenerateTableTest@2a18f23c]" name="createProgrammes" duration-ms="34" started-at="2017-11-11T11:24:29Z" finished-at="2017-11-11T11:24:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createProgrammes -->
-        <test-method status="PASS" signature="useProgrammeCRUD()[pri:0, instance:com.bootcamp.tests.GenerateTableTest@2a18f23c]" name="useProgrammeCRUD" duration-ms="241" started-at="2017-11-11T11:14:28Z" finished-at="2017-11-11T11:14:28Z">
+        <test-method status="PASS" signature="useProgrammeCRUD()[pri:0, instance:com.bootcamp.tests.GenerateTableTest@2a18f23c]" name="useProgrammeCRUD" duration-ms="241" started-at="2017-11-11T11:24:29Z" finished-at="2017-11-11T11:24:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- useProgrammeCRUD -->
       </class> <!-- com.bootcamp.tests.GenerateTableTest -->
       <class name="com.bootcamp.tests.DepartementCrudTest">
-        <test-method status="PASS" signature="createDepartements()[pri:0, instance:com.bootcamp.tests.DepartementCrudTest@357246de]" name="createDepartements" duration-ms="3601" started-at="2017-11-11T11:14:24Z" finished-at="2017-11-11T11:14:28Z">
+        <test-method status="PASS" signature="createDepartements()[pri:0, instance:com.bootcamp.tests.DepartementCrudTest@357246de]" name="createDepartements" duration-ms="1719" started-at="2017-11-11T11:24:27Z" finished-at="2017-11-11T11:24:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDepartements -->
