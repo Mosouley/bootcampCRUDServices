@@ -10,77 +10,65 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class BailleurCRUD implements AppConstants {
-	public static boolean create(Bailleur bailleur) {
-		BailleurRepository bailleurRepository = new BailleurRepository(AppConstants.PERSISTENCE_UNIT);
-		try {
-		return 	bailleurRepository.create(bailleur);
 
-		} catch (SQLException ex) {
-			// TODO Auto-generated catch block
-			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, e);
+    public static boolean create(Bailleur bailleur) {
+        BailleurRepository bailleurRepository = new BailleurRepository(AppConstants.PERSISTENCE_UNIT);
+        try {
+            return bailleurRepository.create(bailleur);
 
-		}
-		return false;
-	}
-	
-	public static boolean update(Bailleur bailleur) {
-		BailleurRepository bailleurRepository = new BailleurRepository(AppConstants.PERSISTENCE_UNIT);
-		try {
-			return bailleurRepository.update(bailleur);
-		} catch (SQLException ex) {
-			// TODO Auto-generated catch block
-			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, e);
+        } catch (SQLException ex) {
+            // TODO Auto-generated catch block
+            Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, ex);
 
-		}
-		return false;
-		
-	}
-	
-	public static boolean delete(Bailleur bailleur) {
-		BailleurRepository bailleurRepository = new BailleurRepository(AppConstants.PERSISTENCE_UNIT);
-		try {
-			bailleurRepository.delete(bailleur);
-			return true;
-		} catch (SQLException ex) {
-			// TODO Auto-generated catch block
-			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, e);
+        }
+        return false;
+    }
 
+    public static boolean update(Bailleur bailleur) {
+        BailleurRepository bailleurRepository = new BailleurRepository(AppConstants.PERSISTENCE_UNIT);
+        try {
+            return bailleurRepository.update(bailleur);
+        } catch (SQLException ex) {
+            // TODO Auto-generated catch block
+            Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, ex);
 
-		}
-		return false;
-	}
+        }
+        return false;
 
-	public static Bailleur read(Long id){
-		BailleurRepository bailleurRepository = new BailleurRepository(AppConstants.PERSISTENCE_UNIT);
-		try {
-			return bailleurRepository.findById(id);
+    }
 
-<<<<<<< HEAD
-		} catch (SQLException ex) {
-			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, ex);
-=======
-		} catch (SQLException e) {
-			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, e);
->>>>>>> bfe3eb84fef38bacd36eb94d85398c8ac0362efc
+    public static boolean delete(Bailleur bailleur) {
+        BailleurRepository bailleurRepository = new BailleurRepository(AppConstants.PERSISTENCE_UNIT);
+        try {
+            bailleurRepository.delete(bailleur);
+            return true;
+        } catch (SQLException ex) {
+            // TODO Auto-generated catch block
+            Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, ex);
 
-		}
-		return null;
-	}
+        }
+        return false;
+    }
 
-	public static List<Bailleur> readAll(){
-		BailleurRepository bailleurRepository = new BailleurRepository(AppConstants.PERSISTENCE_UNIT);
-		try {
-			return bailleurRepository.findAll();
-<<<<<<< HEAD
-		} catch (SQLException ex) {
-			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, ex);
-=======
-		} catch (SQLException e) {
-			Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, e);
->>>>>>> bfe3eb84fef38bacd36eb94d85398c8ac0362efc
+    public static Bailleur read(Long id) {
+        BailleurRepository bailleurRepository = new BailleurRepository(AppConstants.PERSISTENCE_UNIT);
+        try {
+            return bailleurRepository.findById(id);
 
-		}
-		return null;
-	}
+        } catch (SQLException ex) {
+            Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return null;
+    }
+
+    public static List<Bailleur> readAll() {
+        BailleurRepository bailleurRepository = new BailleurRepository(AppConstants.PERSISTENCE_UNIT);
+        try {
+            return bailleurRepository.findAll();
+        } catch (SQLException ex) {
+            Logger.getLogger(BailleurCRUD.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return null;
+    }
 
 }

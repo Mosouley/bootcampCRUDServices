@@ -7,7 +7,6 @@ package com.bootcamp.tests;
 
 import com.bootcamp.entities.Commune;
 import com.bootcamp.entities.Departement;
-import com.bootcamp.jpa.BaseRepository;
 import com.bootcamp.service.crud.DepartementCRUD;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -47,10 +46,8 @@ public class DepartementCrudTest {
         
         dep.setCommuneList(listCommune);
 
-        DepartementCRUD depCrud = new DepartementCRUD();
-        
         try {
-            depCrud.create(dep);
+            DepartementCRUD.create(dep);
         } catch (SQLException ex) {
             Logger.getLogger(DepartementCrudTest.class.getName()).log(Level.SEVERE, null, ex);
         }

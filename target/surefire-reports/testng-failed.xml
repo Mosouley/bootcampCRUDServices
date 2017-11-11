@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [com.bootcamp.tests.DepartementCrudTest]">
+<suite verbose="0" name="Failed suite [Command line suite]">
   <test name="Command line test(failed)">
     <classes>
+      <class name="com.bootcamp.tests.GenerateTableTest">
+        <methods>
+          <include name="createPhases"/>
+          <include name="createProgrammes"/>
+          <include name="useProgrammeCRUD"/>
+        </methods>
+      </class> <!-- com.bootcamp.tests.GenerateTableTest -->
+      <class name="com.bootcamp.tests.ProjetCRUDTest">
+        <methods>
+          <include name="findall"/>
+          <include name="update"/>
+          <include name="create"/>
+        </methods>
+      </class> <!-- com.bootcamp.tests.ProjetCRUDTest -->
       <class name="com.bootcamp.tests.DepartementCrudTest">
         <methods>
-          <include name="getCommunes"/>
+          <include name="createDepartements"/>
         </methods>
       </class> <!-- com.bootcamp.tests.DepartementCrudTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
-</suite> <!-- Failed suite [com.bootcamp.tests.DepartementCrudTest] -->
+</suite> <!-- Failed suite [Command line suite] -->
