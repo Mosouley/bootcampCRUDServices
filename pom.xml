@@ -15,9 +15,9 @@
             <version>6.11</version>
             <scope>test</scope>
         </dependency>
-           <dependency>
+        <dependency>
             <groupId>com.bootcamp</groupId>
-            <artifactId>database</artifactId>
+            <artifactId>boot-DataBase</artifactId>
             <version>1.2-SNAPSHOT</version>
             <type>jar</type>
         </dependency>
@@ -27,13 +27,8 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-<<<<<<< HEAD
       <build>
         <finalName>serviceCRUD</finalName>
-=======
-    <build>
-        <finalName>bootcampCRUD</finalName>
->>>>>>> 898758b14a8e0529ee8478c8c7f43ae97ec33645
         <plugins>
 
             <!-- download source code in Eclipse, best practice -->

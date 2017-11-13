@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  *
- * @author edwigegédéon
+ * @author Bignon
  */
 public class ProjetCRUD
 {
