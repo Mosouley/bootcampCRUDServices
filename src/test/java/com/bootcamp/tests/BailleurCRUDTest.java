@@ -6,7 +6,6 @@ import com.bootcamp.service.crud.BailleurCRUD;
 import org.testng.annotations.Test;
 
 import javax.persistence.Persistence;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -66,15 +65,6 @@ public class BailleurCRUDTest {
         }
     }
 
-/*    @Test
-    public void delete(){
-        Bailleur bailleur =BailleurCRUD.read(2L);
 
-        if(bailleur!=null)
-        BailleurCRUD.delete(bailleur);
-        else
-            System.out.println("Bailleur not found");
-        readAll();
-    }*/
 
 }
