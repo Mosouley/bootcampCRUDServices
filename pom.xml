@@ -15,7 +15,7 @@
             <version>6.11</version>
             <scope>test</scope>
         </dependency>
-           <dependency>
+         <dependency>
             <groupId>com.bootcamp</groupId>
             <artifactId>database</artifactId>
             <version>1.2-SNAPSHOT</version>
@@ -27,15 +27,8 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-<<<<<<< HEAD
       <build>
         <finalName>serviceCRUD</finalName>
-=======
-
-      <build>
-        <finalName>serviceCRUD</finalName>
-
->>>>>>> 6be6f53e75a43a16768258b3cd79638d63893056
         <plugins>
 
             <!-- download source code in Eclipse, best practice -->
