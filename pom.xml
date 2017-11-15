@@ -15,9 +15,9 @@
             <version>6.11</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
+           <dependency>
             <groupId>com.bootcamp</groupId>
-            <artifactId>boot-DataBase</artifactId>
+            <artifactId>database</artifactId>
             <version>1.2-SNAPSHOT</version>
             <type>jar</type>
         </dependency>
