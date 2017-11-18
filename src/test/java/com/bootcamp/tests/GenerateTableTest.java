@@ -39,7 +39,7 @@ public class GenerateTableTest  {
 
         //Obtain all the phases and all the available programms
 
-        ProgrammeCRUD.read();
+        ProgrammeCRUD.findAll();
 
     }
     @Test
