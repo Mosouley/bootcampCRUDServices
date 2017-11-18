@@ -7,7 +7,7 @@ import com.bootcamp.jpa.ProgrammeRepository;
 import com.bootcamp.constants.AppConstants;
 import com.bootcamp.entities.PhaseProgramme;
 import com.bootcamp.jpa.PhaseProgrammeRepository;
-
+import java.util.List;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -30,16 +30,17 @@ public class ProgrammeCRUD implements AppConstants{
         }
        
     }
-      public static void findAll(){
+      public static List<Programme> findAll(){
 
+          List<Programme> laListe=null;
         try {
             ProgrammeRepository progRepo=new ProgrammeRepository(PERSISTENCE_UNIT);
-            progRepo.findAll();
+            laListe=progRepo.findAll();
 
         } catch (SQLException ex) {
             Logger.getLogger(ProgrammeCRUD.class.getName()).log(Level.SEVERE, null, ex);
         }
-
+        return laListe;
     }
 
     public static void update(Programme programme){
