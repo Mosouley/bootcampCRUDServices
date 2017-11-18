@@ -1,11 +1,13 @@
 
 package com.bootcamp.service.crud;
 
-import static com.bootcamp.constants.AppConstants.PERSISTENCE_UNIT;
 import com.bootcamp.entities.Projet;
 import com.bootcamp.jpa.ProjetRepository;
 import java.sql.SQLException;
 import java.util.List;
+
+import static com.bootcamp.constants.AppConstants.PERSISTENCE_UNIT;
+
 
 /**
  *

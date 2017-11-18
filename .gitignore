@@ -1,20 +1,12 @@
-<<<<<<< HEAD
-# Created by .ignore support plugin (hsz.mobi)
+
 .classpath
-.gitignore
 .idea/
 .project
 .settings/
 git
 serviceCRUD.iml
-target/classes/META-INF/
-target/archive-tmp/
-target/classes/com/bootcamp/service/crud/BailleurCRUD.class
-target/generated-sources/
-target/projetCRUD-jar-with-dependencies.jar
-target/projetCRUD.jar
-target/generated-test-sources/
-target
-=======
-/target
->>>>>>> origin/departement
+target/
+nb-configuration.xml
+lib/
+
+

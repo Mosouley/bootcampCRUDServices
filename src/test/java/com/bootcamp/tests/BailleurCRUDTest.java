@@ -1,6 +1,6 @@
 package com.bootcamp.tests;
 
-import com.bootcamp.AppConstants;
+import com.bootcamp.constants.AppConstants;
 import com.bootcamp.entities.Bailleur;
 import com.bootcamp.service.crud.BailleurCRUD;
 import org.testng.annotations.Test;

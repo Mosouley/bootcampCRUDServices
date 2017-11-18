@@ -28,7 +28,6 @@ public class ProgrammeCRUD implements AppConstants {
         }
 
     }
-
     public static List<Programme> findAll() {
 
         List<Programme> laListe = null;
@@ -42,8 +41,8 @@ public class ProgrammeCRUD implements AppConstants {
         return laListe;
     }
 
-    public static void update(Programme programme) {
-        ProgrammeRepository progRepo = new ProgrammeRepository(PERSISTENCE_UNIT);
+    public static void update(Programme programme){
+        ProgrammeRepository progRepo=new ProgrammeRepository(PERSISTENCE_UNIT);
 
         try {
             progRepo.update(programme);
@@ -60,25 +59,45 @@ public class ProgrammeCRUD implements AppConstants {
             Logger.getLogger(ProgrammeCRUD.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+     public static boolean addPhase(PhaseProgramme phase){
 
-    public static void addPhase(PhaseProgramme phase) throws SQLException {
-        //classe statique d'ajout d'une phaseprogramme
-        PhaseProgrammeRepository phaseRepo = new PhaseProgrammeRepository(PERSISTENCE_UNIT);
-        phaseRepo.create(phase);
+        try {
+            PhaseProgrammeRepository phaseRepo=new PhaseProgrammeRepository(PERSISTENCE_UNIT);
+            phaseRepo.create(phase);
+            
+            return true;
+        } catch (SQLException ex) {
+            Logger.getLogger(ProgrammeCRUD.class.getName()).log(Level.SEVERE, null, ex);
+         return false;
+        }
+
+    }
+      public static boolean deletePhase(PhaseProgramme phase){
+
+        try {
+            PhaseProgrammeRepository phaseRepo=new PhaseProgrammeRepository(PERSISTENCE_UNIT);
+            phaseRepo.delete(phase);
+
+            return true;
+        } catch (SQLException ex) {
+            Logger.getLogger(ProgrammeCRUD.class.getName()).log(Level.SEVERE, null, ex);
+         return false;
+        }
+
+    }
+       public static boolean updatePhase(PhaseProgramme phase){
+
+        try {
+            PhaseProgrammeRepository phaseRepo=new PhaseProgrammeRepository(PERSISTENCE_UNIT);
+            phaseRepo.update(phase);
+
+            return true;
+        } catch (SQLException ex) {
+            Logger.getLogger(ProgrammeCRUD.class.getName()).log(Level.SEVERE, null, ex);
+         return false;
+        }
 
     }
 
-    public static void deletePhase(PhaseProgramme phase) throws SQLException {
-        //classe statique d'ajout d'une phaseprogramme
-        PhaseProgrammeRepository phaseRepo = new PhaseProgrammeRepository(PERSISTENCE_UNIT);
-        phaseRepo.delete(phase);
-
-    }
-
-    public static void updatePhase(PhaseProgramme phase) throws SQLException {
-        //classe statique d'ajout d'une phaseprogramme
-        PhaseProgrammeRepository phaseRepo = new PhaseProgrammeRepository(PERSISTENCE_UNIT);
-        phaseRepo.update(phase);
-
-    }
+  
 }
